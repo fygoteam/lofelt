@@ -9,7 +9,9 @@
 
 echo "${PODS_TARGET_SRCROOT}"
 echo "$CONFIGURATION"
-config=${$CONFIGURATION%%-*}
+c="$CONFIGURATION"
+config=${c%-*}
+echo "-- USING LOFELT CONFIG PATH -- "
 echo "$config"
 
 
