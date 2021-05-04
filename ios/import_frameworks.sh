@@ -9,7 +9,8 @@
 
 echo "${PODS_TARGET_SRCROOT}"
 echo "$CONFIGURATION"
-config=${$CONFIGURATION"%-*}
+config=${$CONFIGURATION%%-*}
+echo "$config"
 
 
 rm -rf "${PODS_TARGET_SRCROOT}/LofeltHaptics.framework"
